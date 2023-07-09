@@ -7,11 +7,16 @@ class Circle extends Shape implements CalculateAreaWithRadius {
     private Color color;
 
 
+    public Circle(){}
     public Circle(int radius, Color color){
         this.radius = radius;
         this.color=color;
     }
 
+    @Override
+    public String getName() {
+        return name;
+    }
     @Override
     public String printFigureName(){
         return name;

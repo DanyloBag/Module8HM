@@ -7,12 +7,17 @@ class Rectangle extends Shape implements CalculateAreaWithSides {
     private int sideB;
     private Color color;
 
+    public Rectangle(){}
     public Rectangle(int sideA, int sideB,Color color){
         this.sideA = sideA;
         this.sideB = sideB;
         this.color = color;
     }
 
+    @Override
+    public String getName() {
+        return name;
+    }
     @Override
     public String printFigureName(){
         return name;

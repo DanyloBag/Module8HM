@@ -7,12 +7,17 @@ class Triangle  extends Shape implements CalculateAreaWithSides {
     private int high;
     private Color color;
 
+    public Triangle(){}
     public Triangle(int sideA, int high, Color color){
         this.sideA = sideA;
         this.high = high;
         this.color = color;
     }
 
+    @Override
+    public String getName() {
+        return name;
+    }
     @Override
     public String printFigureName(){
         return name;

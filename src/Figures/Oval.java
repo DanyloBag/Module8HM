@@ -7,12 +7,17 @@ class Oval extends Shape implements CalculateAreaWithRadius {
     private int bigRadius;
     private Color color;
 
+    public Oval(){}
     public Oval(int littleRadius, int bigRadius, Color color){
         this.littleRadius = littleRadius;
         this.bigRadius = bigRadius;
         this.color = color;
     }
 
+    @Override
+    public String getName() {
+        return name;
+    }
     @Override
     public String printFigureName(){
         return name;

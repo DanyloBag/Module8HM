@@ -6,11 +6,16 @@ class Quad  extends Shape implements CalculateAreaWithSides {
     private int sideA;
     private Color color;
 
+   public Quad(){}
     public Quad(int sideA, Color color){
         this.sideA = sideA;
         this.color = color;
     }
 
+    @Override
+    public String getName() {
+        return name;
+    }
     @Override
     public String printFigureName(){
         return name;

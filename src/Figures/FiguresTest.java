@@ -1,6 +1,22 @@
 package Figures;
 public class FiguresTest {
     public static void main(String[] args) {
+        ShapePrinter shapePrinter = new ShapePrinter();
+        Circle circle = new Circle();
+        Oval oval = new Oval();
+        Quad quad = new Quad();
+        Rectangle rectangle = new Rectangle();
+        Triangle triangle = new Triangle();
+
+        shapePrinter.printShapeName(circle);
+        shapePrinter.printShapeName(oval);
+        shapePrinter.printShapeName(quad);
+        shapePrinter.printShapeName(rectangle);
+        shapePrinter.printShapeName(triangle);
+        System.out.println();
+
+
+
         Circle circle1 = new Circle(5,Color.RED);
         circle1.getFigureInfo();
         System.out.println();
@@ -19,6 +35,9 @@ public class FiguresTest {
 
         Triangle triangle1 = new Triangle(8, 9, Color.PINK);
         triangle1.getFigureInfo();
+
+
+
 
 
     }
