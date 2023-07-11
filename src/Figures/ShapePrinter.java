@@ -1,6 +1,9 @@
 package Figures;
-public class ShapePrinter {
-    public void printShapeName(Shape shape) {
-        System.out.println(shape.getName());
+
+public class ShapePrinter  {
+
+
+    public static void printShapeName(Shape shape) {
+        Shape.printShapeName(shape);
     }
 }

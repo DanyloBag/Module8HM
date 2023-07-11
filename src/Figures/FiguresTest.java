@@ -1,18 +1,12 @@
 package Figures;
 public class FiguresTest {
     public static void main(String[] args) {
-        ShapePrinter shapePrinter = new ShapePrinter();
-        Circle circle = new Circle();
-        Oval oval = new Oval();
-        Quad quad = new Quad();
-        Rectangle rectangle = new Rectangle();
-        Triangle triangle = new Triangle();
 
-        shapePrinter.printShapeName(circle);
-        shapePrinter.printShapeName(oval);
-        shapePrinter.printShapeName(quad);
-        shapePrinter.printShapeName(rectangle);
-        shapePrinter.printShapeName(triangle);
+        ShapePrinter.printShapeName(new Circle());
+        ShapePrinter.printShapeName(new Quad());
+        ShapePrinter.printShapeName(new Oval());
+        ShapePrinter.printShapeName(new Rectangle());
+        ShapePrinter.printShapeName(new Triangle());
         System.out.println();
 
 
